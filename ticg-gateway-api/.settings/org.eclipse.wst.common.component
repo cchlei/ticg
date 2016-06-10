@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+	<wb-module deploy-name="ticg-gateway-api">
+		<wb-resource deploy-path="/" source-path="src/main/resources"/>
+		<wb-resource deploy-path="/" source-path="src/main/java"/>
+		<dependent-module deploy-path="../" handle="module:/resource/ticg-demo-api/ticg-demo-api">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/ticg-incident-api/ticg-incident-api">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="../" handle="module:/resource/ticg-util/ticg-util">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>

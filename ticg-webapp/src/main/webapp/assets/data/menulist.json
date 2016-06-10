@@ -1,0 +1,123 @@
+{
+  "status" : 0,
+  "msg" : null,
+  "rows" : [
+    {
+      "id":"123",
+      "name":"应用服务",
+      "rows":[
+        {
+          "id":"456",
+          "name" : "云服务器",
+          "ico":"../images/menu_ico11.png",
+          "rows":[
+            {
+              "id":"456",
+              "name" : "快照",
+              "rows":[
+                {
+                  "id":"456",
+                  "name" : "快照策略",
+                  "url":"http://baidu.com#9999"
+                },{
+                  "id":"789",
+                  "name" : "快照列表",
+                  "url":"http://baidu.com#1111"
+                }
+              ]},
+            {
+              "id":"789",
+              "name" : "实例",
+              "rows":[
+                {
+                  "id":"456",
+                  "name" : "策略快照",
+                  "url":"http://baidu.com"
+                },{
+                  "id":"789",
+                  "name" : "列表快照",
+                  "url":"http://baidu.com"
+                }]
+            },
+            {
+              "id":"841",
+              "name" : "磁盘",
+              "url":"http://baidu.com"
+            }
+          ]
+        },{
+          "id":"789",
+          "name" : "负载均衡",
+          "ico":"../images/menu_ico11.png",
+          "rows":[
+            {
+              "id":"324234",
+              "name" : "磁盘",
+              "url":"http://baidu.com#1"
+            },
+            {
+              "id":"789",
+              "name" : "实例",
+              "url":"http://k.cn#2"
+            },
+            {
+              "id":"841",
+              "name" : "磁盘",
+              "url":"http://baidu.com"
+            }
+          ]
+        },{
+          "id":"841",
+          "name" : "数据传输",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        }
+      ]
+    },
+    {
+      "id":"5675676",
+      "name":"共享服务",
+      "rows":[
+        {
+          "id":"24",
+          "name" : "共享案例",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        },{
+          "id":"67",
+          "name" : "共享事件",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        }
+      ]
+    },
+    {
+      "id":"4657",
+      "name":"用户中心",
+      "rows":[
+        {
+          "id":"693",
+          "name" : "账号管理",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        },{
+          "id":"862",
+          "name" : "费用中心",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        },{
+          "id":"365",
+          "name" : "续费管理",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        },{
+          "id":"45",
+          "name" : "消息中心",
+          "ico":"../images/menu_ico11.png",
+          "url":"http://baidu.com"
+        }
+      ]
+    }
+    ]
+}
+

@@ -1,0 +1,30 @@
+package test.com.trgis.ticg.demo.web.controller;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Repeat;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.trgis.ticg.demo.model.DemoUser;
+import com.trgis.ticg.demo.web.controller.DemoController;
+
+@ActiveProfiles("test")
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration({"classpath*:/applicationContext-*.xml","classpath*:/springmvc.xml"})
+public class TestDemoController {
+	
+	@Autowired
+	private DemoController demoController;
+	
+	@Test
+	@Repeat(10)
+	public void testFindUser(){
+		DemoUser user = demoController.findUser();
+		System.out.println(user.getId());
+	}
+	
+
+}

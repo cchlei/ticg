@@ -1,0 +1,60 @@
+<!DOCTYPE html> <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>社区云平台</title>
+    <link rel="stylesheet" href="../css/comm.css"/>
+    <script src="../libs/avalon.min.js"></script>
+    <script src="../libs/cseajs/csea$.js" id="seajsnode" main="__/js/main"></script>
+    <script>
+        var pageCfg = {
+            //菜单栏
+            menu_list :"../data/menulist.json"
+        }
+    </script>
+</head>
+<body ms-controller="menu">
+    <div class="root">
+        <div class="top">
+            <div class="left"><span class="logo"></span><span class="border"><a href="#">产品与服务</a></span></div>
+            <div class="right"><span>被风吹过的夏天 <i></i></span><p>退出</p></div>
+            <div class="clear"></div>
+        </div>
+        <div class="nav">
+            <h4></h4>
+            <div ms-each-ee="list">
+                <!--一级-->
+                <h3><i></i> {{ee.name}} <em></em> <span><em></em> {{ee.name}}</span></h3>
+                <ul>
+                    <!--二级-->
+                    <li ms-repeat-eee="ee.rows || []" ms-attr-url="eee.url" ms-class-1="active:eee.light">
+                        <div  ms-click="nodeclick(eee,$event)">
+                            <img ms-attr-src="eee.ico"> {{eee.name}} <span><em></em> {{eee.name}} </span>
+                        </div>
+
+                        <!--三级-->
+                        <div class="threemenu" ms-if="is_three_menu_show(eee)">
+                            <h2>{{eee.name}}</h2>
+                            <div ms-each-three="eee.rows || []">
+                                <p ms-click="nodeclick(three,$event)" ms-attr-url="three.url" ms-class-1="acitv:three.light"><a href="#"><i ms-if="three.rows"></i>{{three.name}}</a></p>
+                                <ul>
+                                    <!--四级-->
+                                    <li ms-repeat-four="three.rows || []" ms-click="nodeclick(four,$event)" ms-attr-url="four.url" ms-class-1="acitv:four.light"><a href="javascript:;">{{four.name}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="openmenu" ms-if="is_three_menu_show(eee)" ms-click="openmenu" ms-class-1="on:shousuo"></p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="iframe"> <iframe src="about:blank" frameborder="0" id="main_iframe"></iframe></div>
+    </div>
+</body>
+</html>
