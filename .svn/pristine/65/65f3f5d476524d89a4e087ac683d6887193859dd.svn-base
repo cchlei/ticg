@@ -1,0 +1,8 @@
+cas.realm.casServerUrlPrefix=http://localhost:8080/cas
+cas.realm.casService=http://localhost:8080/ticg-webapp/cas
+
+shiro.cas.loginUrl=http://localhost:8080/cas/login?service=http://localhost:8080/ticg-webapp/cas
+
+shiro.logout.redirectUrl=http://localhost:8080/cas/logout?service=http://localhost:8080/ticg-webapp
+
+sessionId.cookie.domain=localhost

@@ -1,0 +1,66 @@
+.planeUl,ol,ul{list-style:none}
+.root .topp,body{background-color:#fff}
+.div_inline_block,.iblock,.inblock{display:inline-block;vertical-align:top;*zoom:1;*display:inline}
+.__icon{background-repeat:no-repeat;background-position:50% 50%}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-family:inherit;vertical-align:baseline}
+h1,h2,h3,h4,h5,h6{font-weight:700}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}
+.root .nav .row3 .topfont i,.root .nav .row3 p a i{display:inline-block;vertical-align:middle}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+em,i{font-style:normal}
+a{text-decoration:none}
+.clear{font-size:0;height:0;width:0;clear:both}
+.center{margin-left:auto;margin-right:auto}
+.txcut{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.planeUl li{margin:0}
+.noSelect{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.yahei{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\9ED1\4F53","\65B0\5B8B\4F53"}
+.heiti{font-family:"\9ED1\4F53",SimHei}
+.root .nav .row1 .r1 .font,.root .top,body{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\9ED1\4F53","\65B0\5B8B\4F53"}
+.expandin{width:100%;height:100%;top:0;left:0}
+.v_hidden{position:absolute;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}
+body,html{font-size:14px}
+body{line-height:1;min-height:660px!important}
+.root .topp{width:100%;position:fixed;z-index:999;top:0}
+.root .top{width:1200px;margin:0 auto;font-size:15px;height:60px;line-height:60px}
+.root .top a{color:#037DD0;margin:0 12px;float:right}
+.root .top a.logo{float:left;margin-top:3px}
+.root .top a.login span{background-color:#037DD0;color:#fff;padding:3px 12px;border-radius:12px}
+.root .nav{width:100%;margin-top:60px}
+.root .nav .row1{width:100%;height:620px;background:#21c2f9;filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#20c1fa', endColorStr='#2c8deb', gradientType='0');background:-webkit-linear-gradient(left,#20c1fa,#2c8deb);background:linear-gradient(to right,#20c1fa,#2c8deb)}
+.root .nav .row1 .r1{width:1200px;margin:0 auto;color:#fff;position:relative;height:700px}
+.root .nav .row1 .r1 .font{width:335px;text-align:left;padding-top:165px}
+.root .nav .row1 .r1 .font h2{font-size:60px;font-weight:500;letter-spacing:7px}
+.root .nav .row1 .r1 .font p{font-size:20px;margin-top:24px}
+.root .nav .row1 .r1 .font p.english{font-size:28px;margin-top:12px;font-family:arial,"Courier New",sans-serif;color:#B9E3F9}
+.root .nav .row2,.root .nav .row3 .topfont h2,.root .nav .row3 p,.root .nav .row3 p a{font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\9ED1\4F53","\65B0\5B8B\4F53"}
+.root .nav .row1 .r1 .img{position:absolute;bottom:56px;width:780px;right:0}
+.root .nav .row1 .r1 .img img{width:100%}
+.root .nav .row2{color:#1b87df;padding-top:40px;background-color:#f7f7f7}
+.root .nav .row2 img{position:absolute}
+.root .nav .row2 img.img2{right:0;top:70px}
+.root .nav .row2 img.img1{left:0;top:67px}
+.root .nav .row2 .r2{width:1200px;height:550px;margin:0 auto;position:relative}
+.root .nav .row2 .r2 .font{width:506px;height:94px;position:absolute;right:0;top:50%;margin-top:-47px}
+.root .nav .row2 .r2 .font p{letter-spacing:3px;font-size:40px;color:#2d354c}
+.root .nav .row2 .r2 .font p.small{font-size:18px;letter-spacing:1px;margin-top:24px;line-height:24px;color:#1f2536}
+.root .nav .row2 .r3{width:1200px;height:550px;margin:0 auto;position:relative}
+.root .nav .row2 .r3 .font{height:94px;position:absolute;left:0;top:50%;margin-top:-47px}
+.root .nav .row2 .r3 .font p{letter-spacing:3px;font-size:40px;color:#2d354c}
+.root .nav .row2 .r3 .font p.small{font-size:18px;letter-spacing:1px;margin-top:24px;line-height:24px;color:#1f2536}
+.root .nav .row3{width:100%;height:290px;background-color:#4294f7}
+.root .nav .row3 .topfont{width:1200px;margin:0 auto;text-align:center}
+.root .nav .row3 .topfont i{border-bottom:1px #fff solid;width:513px}
+.root .nav .row3 .topfont h2{font-size:32px;color:#fff;font-weight:500;padding-top:50px}
+.root .nav .row3 .topfont h2 span{padding:0 12px}
+.root .nav .row3 h3{color:#e3edf9;font-size:24px;font-weight:500;text-align:center;margin-top:24px;line-height:80px}
+.root .nav .row3 p{text-align:center}
+.root .nav .row3 p a{color:#fff;margin:0 8px;position:relative}
+.root .nav .row3 p a img{position:absolute;left:0;width:96px;height:20px;z-index:-7}
+.root .nav .row3 p a i.xl{width:23px;height:21px;background:url(../images/img_xl.png);margin-top:-3px}
+.root .nav .row3 p a i.qq{width:18px;height:21px;background:url(../images/img_qq.png);margin-top:-3px}
+.root .nav .row3 p a i.xx{width:24px;height:17px;background:url(../images/img_xx.png);margin-top:-3px}
+.root .nav .row3 p a i.yj{width:25px;height:24px;background:url(../images/img_yj.png);margin-top:0}
+.root .nav .row4{height:50px;line-height:50px;width:100%;text-align:center;font-size:14px;color:#393e4b;background-color:#efefef}

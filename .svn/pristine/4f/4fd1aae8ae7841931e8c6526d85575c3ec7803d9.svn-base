@@ -1,0 +1,19 @@
+# Hibernate 
+hibernate.hbm2ddl.auto=update
+hibernate.generateDdl=true
+hibernate.showSql=true
+
+#===================================================
+#PostgreSQL database settings
+jdbc.driver=org.postgresql.Driver
+jdbc.url=jdbc:postgresql://localhost:5432/ticgdb
+jdbc.username=postgres
+jdbc.password=postgres
+
+cas.realm.casServerUrlPrefix=https://login.trmap.cn/
+cas.realm.casService=http://www.trmap.cn/cas
+shiro.cas.loginUrl=https://login.trmap.cn/login?service=http://www.trmap.cn/cas
+shiro.logout.redirectUrl=https://login.trmap.cn/logout?service=http://www.trmap.cn
+
+#shiro session cookie domain
+sessionId.cookie.domain=trmap.cn

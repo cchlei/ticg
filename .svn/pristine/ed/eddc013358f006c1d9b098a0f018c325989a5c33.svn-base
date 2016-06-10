@@ -1,0 +1,23 @@
+package com.trgis.ticg.demo.web.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.trgis.ticg.demo.model.DemoUser;
+import com.trgis.ticg.gateway.demo.api.DemoServiceGateway;
+
+@RestController
+public class DemoController {
+
+	@Autowired
+//	DemoService demoService;
+	private DemoServiceGateway demoServiceGateway;
+	
+	@RequestMapping("/user")
+	public DemoUser findUser() {
+		String id = "demo-id-001";
+		return demoServiceGateway.findUser(id);
+	}
+	
+}

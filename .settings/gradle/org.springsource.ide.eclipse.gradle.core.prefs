@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Tue Jun 07 18:37:32 CST 2016
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;ticg-core;ticg-demo-api;ticg-demo-impl;ticg-demo-webapp;ticg-gateway-api;ticg-incident-api;ticg-incident-impl;ticg-incident-webapp;ticg-system;ticg-system-core;ticg-util;ticg-webapp;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=

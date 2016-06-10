@@ -1,0 +1,68 @@
+buildscript {
+    repositories {
+    	maven {url "http://117.34.70.38:8081/nexus/content/groups/public/"}
+    	mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE"
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'eclipse-wtp'
+
+	apply plugin: "io.spring.dependency-management"
+
+	dependencyManagement {
+	    imports {
+	        mavenBom "io.spring.platform:platform-bom:2.0.5.RELEASE"
+	    }
+	}
+
+	// JVM 版本要求
+    sourceCompatibility = 1.8
+
+    // java编译的时候缺省状态下会因为中文字符而失败
+    [compileJava, compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
+
+    repositories {
+	   maven { url "http://117.34.70.38:8081/nexus/content/groups/public/" }
+	   mavenCentral()
+	}
+	configurations {
+		    // 所有需要忽略的包定义在此
+		    // 排除低版本postgresql数据库依赖
+		    all*.exclude group:'postgresql',module: 'postgresql'
+		}
+    dependencies {
+        compile 'com.trgis:tr-commons-util:1.2.3.RELEASE'
+        compile 'org.postgresql:postgresql:9.4-1201.jdbc41'
+		// Spring
+		compile 'org.springframework:spring-core'
+		compile 'org.springframework:spring-beans'
+		compile 'org.springframework:spring-aop'
+		compile 'org.springframework:spring-context'
+		compile 'org.springframework:spring-context-support'
+		
+		compile 'org.codehaus.groovy:groovy-all'
+		
+		compile 'org.apache.commons:commons-lang3'
+		
+		// Log
+		compile 'ch.qos.logback:logback-core'
+		compile 'ch.qos.logback:logback-classic'
+		
+		// JSON LIB
+		compile 'com.alibaba:fastjson:1.2.7'
+		compile 'com.fasterxml.jackson.core:jackson-core:2.5.3'
+		compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+		
+		testCompile 'junit:junit:4.+'
+		testCompile 'org.springframework:spring-test:4.2.1.RELEASE'
+    }
+
+    version = '1.0'
+}

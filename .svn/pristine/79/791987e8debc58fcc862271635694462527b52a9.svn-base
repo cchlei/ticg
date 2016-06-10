@@ -1,0 +1,21 @@
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+dependencies {
+    compile project(":ticg-demo-api")
+    compile project(":ticg-incident-api")
+    
+    compile "org.apache.httpcomponents:httpclient"
+    compile "commons-lang:commons-lang"
+    compile "commons-logging:commons-logging"
+    
+    compile 'ch.qos.logback:logback-core'
+    compile 'ch.qos.logback:logback-classic'
+    compile "org.slf4j:slf4j-api"
+    
+    compile "org.eclipse.jetty:jetty-util"
+}

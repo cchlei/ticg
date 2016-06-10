@@ -1,0 +1,35 @@
+archivesBaseName = 'ticg-incident-webapp'
+
+apply plugin: 'war'
+
+dependencies {
+    compile project(":ticg-incident-impl")
+    compile project(":ticg-gateway-api")
+    
+    // Spring Webmvc
+	compile 'org.springframework:spring-web:4.2.1.RELEASE'
+	compile 'org.springframework:spring-webmvc:4.2.1.RELEASE'
+	
+	compile "com.alibaba:druid:1.0.20"
+    compile "org.postgresql:postgresql:9.4-1206-jdbc42"
+
+	compile ('org.apache.shiro:shiro-core:1.2.3',
+	'org.apache.shiro:shiro-ehcache:1.2.3',
+	'org.apache.shiro:shiro-web:1.2.3',
+	'org.apache.shiro:shiro-quartz:1.2.3',
+	'org.apache.shiro:shiro-spring:1.2.3')
+	
+	compile "org.apache.httpcomponents:httpclient"
+    compile "commons-lang:commons-lang"
+    compile "commons-logging:commons-logging"
+    
+    compile "org.eclipse.jetty:jetty-util"
+	
+	compile 'javax.servlet:jstl:1.2'
+
+	//系统提供的依赖
+	providedCompile('javax.servlet:servlet-api:2.5','javax.servlet.jsp:jsp-api:2.1')
+	
+	testCompile 'org.springframework:spring-test:4.2.1.RELEASE'
+	
+}

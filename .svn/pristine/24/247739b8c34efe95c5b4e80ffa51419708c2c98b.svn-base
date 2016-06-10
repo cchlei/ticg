@@ -1,0 +1,7 @@
+package com.trgis.ticg.gateway.incident.api;
+
+import com.trgis.ticg.incident.api.EventService;
+
+public interface EventServiceGateway extends EventService{
+
+}

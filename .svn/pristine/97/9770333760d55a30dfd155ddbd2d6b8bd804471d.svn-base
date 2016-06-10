@@ -1,0 +1,17 @@
+
+include "ticg-core","ticg-webapp","ticg-system","ticg-system-core"
+
+include "ticg-gateway-api"
+
+//
+include "ticg-util"
+
+//demo
+include "ticg-demo-api"
+include "ticg-demo-impl"
+include "ticg-demo-webapp"
+
+//incident
+include "ticg-incident-api"
+include "ticg-incident-impl"
+include "ticg-incident-webapp"
